@@ -6,8 +6,8 @@ buildscript {
             }
     }
     dependencies {
-        classpath 'com.netflix.nebula:nebula-release-plugin:6.3.5'
-        classpath 'com.netflix.nebula:nebula-publishing-plugin:7.1.0'
+        classpath 'com.netflix.nebula:nebula-release-plugin:6.0.0'
+        classpath 'com.netflix.nebula:nebula-publishing-plugin:6.0.0'
 
     }
 }
