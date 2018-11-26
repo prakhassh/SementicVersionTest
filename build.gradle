@@ -40,6 +40,20 @@ release {
 
 tasks.release.finalizedBy tasks.publish
 
+publishing {
+
+    repositories {
+        maven {
+            url "http://${nexusHost}/content/repositories/${nexusRepo}-${project.version.toString().endsWith('-SNAPSHOT') ? 'snapshots' : 'releases'}"
+
+            credentials {
+                username "${nexusUser}"
+                password "${nexusPassword}"
+            }
+        }
+        mavenLocal()
+    }
+}
 
 
     
