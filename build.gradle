@@ -6,14 +6,14 @@ buildscript {
             }
     }
     dependencies {
-        classpath 'com.netflix.nebula:nebula-release-plugin:6.0.0'
-        classpath 'com.netflix.nebula:nebula-publishing-plugin:6.0.0'
+        classpath 'com.netflix.nebula:nebula-release-plugin:9.0.0'
+        classpath 'com.netflix.nebula:nebula-publishing-plugin:9.0.0'
 
     }
 }
 
 allprojects{
-    group 'nexasGroup'
+    group 'nexusGroup'
     apply plugin: 'nebula.release'
     apply plugin: 'nebula.maven-publish'
     apply plugin: 'nebula.javadoc-jar'
@@ -23,7 +23,6 @@ allprojects{
 
 version '1.0-SNAPSHOT'
 
-//sourceCompatibility = 1.8
 
 /*/dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
